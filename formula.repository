@@ -1,0 +1,52 @@
+\form#0:\[ x_1 = l_1 \cos(\theta_1) + l_2 \cos(\theta_2) \]
+\form#1:\[ y_1 = l_1 \sin(\theta_1) + l_2 \sin(\theta_2) \]
+\form#2:\[ {\mathbf x}^T {\mathbf y} \]
+\form#3:\[ \sqrt{ {\mathbf x}^T {\mathbf y} } \]
+\form#4:\[ \sum_{i=0}^n (x_i-y_i)^2 \]
+\form#5:\[ \sqrt{\sum_{i=0}^n (x_i-y_i)^2} \]
+\form#6:\[ r_i \leftarrow \alpha + x_i \]
+\form#7:\[ x_i \leftarrow \alpha * x_i \]
+\form#8:\[ y_i \leftarrow x_i + y_i \]
+\form#9:\[ x_i \leftarrow \alpha + x_i \]
+\form#10:\[ y_i \leftarrow \alpha x_i + y_i \]
+\form#11:\[ z_i \leftarrow \alpha x_i + y_i \]
+\form#12:\[ r_i \leftarrow \alpha * x_i \]
+\form#13:\[ r_i \leftarrow \alpha - x_i \]
+\form#14:\[ r_i \leftarrow \alpha / x_i \]
+\form#15:\[ r_i \leftarrow x_i + y_i \]
+\form#16:\[ r_i \leftarrow x_i - y_i \]
+\form#17:\[ r_i \leftarrow x_i * y_i \]
+\form#18:\[ r_i \leftarrow x_i / y_i \]
+\form#19:\[ c \leftarrow a \times b \]
+\form#20:\[ x \leftarrow \frac{x}{\|x\|}\]
+\form#21:\[ x^T A y \]
+\form#22:\[ A = U \Sigma V^T \]
+\form#23:$A \in \Re^m \times \Re^n$
+\form#24:$U \in \Re^m \times \Re^m$
+\form#25:$S \in \Re^m min(m,n)$
+\form#26:$V^T \in \Re^n \times \Re^n$
+\form#27:\[ A \leftarrow A^{-1} \]
+\form#28:$A \in \Re^n \times \Re^n$
+\form#29:\[ A^\ddagger \leftarrow A^T (AA^T + kI)^{-1} \]
+\form#30:\[ A^\ddagger \leftarrow \sum_{i=0}^r \frac{\sigma_i}{{\sigma_i}^2+k} v_i {u_i}^T \]
+\form#31:$ A \in \Re^m\times\Re^n$
+\form#32:$ A^\ddagger \in \Re^n\times\Re^m$
+\form#33:\[ x = A^\ddagger b \]
+\form#34:$ A \in \Re^m\times\Re^n $
+\form#35:$ b \in \Re^m $
+\form#36:$ x \in \Re^n $
+\form#37:\[ x = A^\ddagger b + (I-A^\ddagger A)x_p \]
+\form#38:\[ b = Ax \]
+\form#39:\[ A^TX + XA - XBX + C = 0 \]
+\form#40:\[ x_1 \leftarrow Ax_0 + Bu \]
+\form#41:\[ \dot{x} = Ax_0 + Bu \]
+\form#42:\[ x_1 \leftarrow x_0 + \Delta t \dot{x} \]
+\form#43:\[ y = f(cx, x) \]
+\form#44:\[ x_1 \leftarrow dt*dx + x_0 \]
+\form#45:\[ \dot{x} = Ax + D \]
+\form#46:$ t \in \Re^n $
+\form#47:$ Y \in \Re^m\times\Re^n $
+\form#48:\[ \bf{q} \leftarrow \frac{\bf q}{\Arrowvert {\bf q} \Arrowvert} \]
+\form#49:\[ q_{\rm rel} = q_1 q_2^{-1} \]
+\form#50:\[ A = P * L * U \]
+\form#51:$| b - A*x |$
