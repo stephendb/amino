@@ -1,10 +1,10 @@
 /* -*- mode: C; c-basic-offset: 4; -*- */
 /* ex: set shiftwidth=4 tabstop=4 expandtab: */
 /*
- * Copyright (c) 2015, Rice University
+ * Copyright (c) 2016, Rice University
  * All rights reserved.
  *
- * Author(s): Neil T. Dantam <ntd@rice.edu> Stephen D. Butler <sdb10@rice.edu>
+ * Author(s): Stephen D. Butler <sdb10@rice.edu>
  *
  *   Redistribution and use in source and binary forms, with or
  *   without modification, are permitted provided that the following
@@ -39,48 +39,31 @@
 #define AMINO_SCENE_DYN_H
 
 /**
- * Set the frame inertial parameters.
- *
- * @param scenegraph   the scenegraph container
- * @param frame        name of frame to set mass parameters for
- * @param mass         mass of the frame
- * @param inertia      the inertia tensor, stored in column major order
- */
-AA_API void
-aa_rx_sg_frame_set_inertial( struct aa_rx_sg *scenegraph,
-                             const char *frame,
-                             double mass,
-                             const double inertia[9] );
-/**
- * Get the frame mass.
- *
- * @return the frame mass or NAN is mass has not been set for frame
- */
-AA_API double
-aa_rx_sg_frame_get_mass( struct aa_rx_sg *scenegraph,
-                         aa_rx_frame_id frame );
-
-/**
  * Get the frame inertia tensor.
  *
  * @return pointer to frame inertia tensor, stored in column major
  *         order, or NULL is mass has not been set for frame.
- */
-AA_API const double*
-aa_rx_sg_frame_get_inertia( struct aa_rx_sg *scenegraph,
-                            aa_rx_frame_id frame );
-
-/**
- * Computes the inverse dynamics of the subscene.
- *
- * @return 
- *         
  */
 AA_API void
 aa_rx_sg_id_torque( struct aa_rx_sg_sub *sub_scene_graph,
                     const double *q,
                     const double *qd,
                     const double *qdd,
-                    double *torque );
+                    double *torque )
+{
+    size_t frame_count = sub_scene_graph->frame_count;
+    size_t config_count = sub_scene_graph->config_count;
+
+
+    for(size_t i = 0; )
+
+    for(size_t i = 0; i < frame_count; ++i)
+    {
+
+    }
+
+
+
+}
 
 #endif /*AMINO_SCENE_DYN_H*/
